@@ -1,0 +1,21 @@
+# === Node.js / React ===
+node_modules/
+build/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-error.log*
+
+# === Java / Spring Boot ===
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# === IDE / System Files ===
+.idea/
+.vscode/
+.DS_Store
+*.iml
