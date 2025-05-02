@@ -396,7 +396,7 @@ public class ExamController {
                 }
 
                 // Return true if sababsizNB count is more than 4
-                return sababsizNB <= 4;
+                return sababsizNB <= 8;
             }
         } catch (Exception e) {
             e.printStackTrace();

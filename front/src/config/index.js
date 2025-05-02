@@ -1,8 +1,8 @@
 import axios from "axios";
 export let baseUrl;
-// baseUrl ="http://localhost:8082";
+baseUrl ="http://localhost:8081";
 // baseUrl ="https://qabul-new.buxpxti.uz";
-baseUrl ="";
+// baseUrl ="";
 export default function (url, method, data, param) {
     let token = localStorage.getItem("access_token");
     // console.log(param)

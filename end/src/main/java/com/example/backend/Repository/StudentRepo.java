@@ -10,8 +10,11 @@ import java.util.UUID;
 
 public interface StudentRepo extends JpaRepository<Student, UUID> {
 
-    @Query(value = "select * from students where group_id=:groupId", nativeQuery = true)
+//    @Query(value = "select * from students where group_id=:groupId", nativeQuery = true)
+//    List<Student> findAllByGroupId(Integer groupId);
+    @Query(value = "SELECT * FROM students WHERE group_id = :groupId ORDER BY full_name ASC", nativeQuery = true)
     List<Student> findAllByGroupId(Integer groupId);
+
 
     Optional<Student> findByHemisId(Integer hemisId);
 }

@@ -125,7 +125,7 @@ public class GroupsController {
 
     @GetMapping("/students/{groupId}")
     public HttpEntity<?> getStudents(@PathVariable Integer groupId) {
-        System.out.println(groupId);
+
         List<Student> students = studentRepo.findAllByGroupId(groupId);
         System.out.println(students);
         return new ResponseEntity<>(students, HttpStatus.OK);
